@@ -42,11 +42,11 @@ int main() {
     float Area_2 = 0;
     float PIB_2 = 0;
     int Pontos_Turisticos_2 = 0;
-/* fim da declaração das variaveis da segunda carta*/
+    /* fim da declaração das variaveis da segunda carta*/
 
-/*
- criando uma variavel que ira ser utilizada de intermediaria para evitar lixos no stdin
-*/
+    /*
+        criando uma variavel que ira ser utilizada de intermediaria para evitar lixos no stdin
+    */
     char variaveltemporaria[100]; 
 
 
@@ -54,7 +54,7 @@ int main() {
 
 
 
-/* criando um pequeno cabeçalho para o jogo  */
+    /* criando um pequeno cabeçalho para o jogo  */
 
     printf("\n--------------------------------------------\n");
     printf("-- Super Trunfo - Paises                   --\n");
@@ -63,10 +63,10 @@ int main() {
     printf("--------------------------------------------\n");
     printf("-- Primeira Carta --------------------------\n");
 
-   /*
+    /*
    
    
-  Resumo de algumas funções utlizada para terminar essa tarefa sem problemas.
+    Resumo de algumas funções utlizada para terminar essa tarefa sem problemas.
    
     fgets( variavel , tamanho, entrada); usada para leitura de variavel tanto em arquivos como em teclados. 
      
@@ -118,12 +118,12 @@ int main() {
     fgets(variaveltemporaria, sizeof(variaveltemporaria), stdin);//armazena o valor digitado na variavel temporaria
     sscanf(variaveltemporaria, "%d", &Pontos_Turisticos_1);//coloca o valor em Pontos_turisticos_1
 
-//-------------------------------------------------------------
-// gravação dos dados da segunda carta 
+    //-------------------------------------------------------------
+    // gravação dos dados da segunda carta 
  
- printf("-- Segunda Carta --------------------------\n");
+    printf("-- Segunda Carta --------------------------\n");
 
-      //mostra na tela e pega o primeiro caracter e coloca no Estado_1
+    //mostra na tela e pega o primeiro caracter e coloca no Estado_1
     printf("-- Digite uma letra de A a H para o estado: ");//mostra a mensagem na tela 
     fgets(variaveltemporaria, sizeof(variaveltemporaria), stdin);  //leitura via teclado e grava na variavel
     Estado_2 = variaveltemporaria[0]; // pega só o primeiro caractere
